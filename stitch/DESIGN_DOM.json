@@ -1,0 +1,2659 @@
+{
+  "generatedAt": "2026-06-17T10:25:48.177Z",
+  "screenCount": 5,
+  "screens": {
+    "5acbe56f6e964ccc94b8e3151faa1c30": {
+      "screenId": "5acbe56f6e964ccc94b8e3151faa1c30",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container-lowest",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-margin",
+            "py-cell-padding-v",
+            "w-full",
+            "z-50",
+            "border-b",
+            "border-outline-variant"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "lg:flex",
+            "flex-col",
+            "h-full",
+            "bg-surface-container-low",
+            "w-[240px]",
+            "border-r",
+            "border-outline-variant",
+            "shrink-0",
+            "relative"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "overflow-hidden",
+            "relative"
+          ],
+          "childCount": 59
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary",
+            "rounded",
+            "font-body-sm",
+            "text-body-sm",
+            "py-cell-padding-v",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-stack-sm",
+            "hover:opacity-90",
+            "transition-opacity"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "text-secondary",
+            "px-cell-padding-h",
+            "py-1.5",
+            "rounded",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "hover:bg-surface-container-low",
+            "transition-colors",
+            "font-body-sm",
+            "text-body-sm"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "New",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary",
+            "px-cell-padding-h",
+            "py-1.5",
+            "rounded",
+            "flex",
+            "items-center",
+            "gap-stack-sm",
+            "hover:opacity-90",
+            "transition-opacity",
+            "font-body-sm",
+            "text-body-sm",
+            "lg:hidden"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Prev",
+          "classes": [
+            "px-2",
+            "py-1",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "disabled:opacity-50"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Next",
+          "classes": [
+            "px-2",
+            "py-1",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "hover:bg-surface-container-low"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "open_in_new",
+          "classes": [
+            "text-secondary",
+            "hover:text-primary"
+          ],
+          "icon": "open_in_new",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Reassign",
+          "classes": [
+            "flex-1",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "text-secondary",
+            "px-3",
+            "py-1.5",
+            "rounded",
+            "font-body-sm",
+            "text-body-sm",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Escalate",
+          "classes": [
+            "flex-1",
+            "bg-primary",
+            "text-on-primary",
+            "px-3",
+            "py-1.5",
+            "rounded",
+            "font-body-sm",
+            "text-body-sm",
+            "hover:opacity-90",
+            "transition-opacity"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search records...",
+          "placeholder": "Search records...",
+          "name": "",
+          "classes": [
+            "w-64",
+            "pl-10",
+            "pr-4",
+            "py-1.5",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "bg-surface-container-lowest",
+            "font-body-sm",
+            "text-body-sm",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "rounded",
+            "border-outline-variant",
+            "text-primary",
+            "focus:ring-primary",
+            "h-3",
+            "w-3"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "analytics",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-[20px]"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "menu",
+        "notifications",
+        "account_circle",
+        "add",
+        "precision_manufacturing",
+        "analytics",
+        "settings",
+        "help",
+        "logout",
+        "search",
+        "filter_list",
+        "trending_up",
+        "error",
+        "open_in_new"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#d8dadc",
+        "surface-container-highest": "#e0e3e5",
+        "outline-variant": "#c3c6d7",
+        "inverse-primary": "#b4c5ff",
+        "on-error-container": "#93000a",
+        "tertiary-container": "#bc4800",
+        "outline": "#737686",
+        "primary": "#004ac6",
+        "on-secondary-fixed": "#0d1c2e",
+        "tertiary": "#943700",
+        "surface-container-high": "#e6e8ea",
+        "primary-container": "#2563eb",
+        "tertiary-fixed": "#ffdbcd",
+        "on-background": "#191c1e",
+        "surface-tint": "#0053db",
+        "secondary": "#515f74",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary": "#ffffff",
+        "background": "#f7f9fb",
+        "surface-container": "#eceef0",
+        "secondary-fixed": "#d5e3fc",
+        "on-primary-fixed": "#00174b",
+        "surface": "#f7f9fb",
+        "tertiary-fixed-dim": "#ffb596",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary-fixed-dim": "#b9c7df",
+        "inverse-surface": "#2d3133",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "surface-variant": "#e0e3e5",
+        "on-tertiary-container": "#ffede6",
+        "on-primary-container": "#eeefff",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed": "#360f00",
+        "on-primary-fixed-variant": "#003ea8",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#f2f4f6",
+        "on-secondary-fixed-variant": "#3a485b",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "inverse-on-surface": "#eff1f3",
+        "secondary-container": "#d5e3fc",
+        "on-surface-variant": "#434655",
+        "on-tertiary-fixed-variant": "#7d2d00",
+        "on-surface": "#191c1e",
+        "on-secondary-container": "#57657a"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "1"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "New",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Prev",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Next",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "open_in_new",
+          "icon": "open_in_new",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Reassign",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Escalate",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search records...",
+          "type": "text",
+          "placeholder": "Search records...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Record Operations - AuditTile Mini"
+    },
+    "7586ccb18b684dfead9c40675a4993be": {
+      "screenId": "7586ccb18b684dfead9c40675a4993be",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "lg:flex",
+            "flex-col",
+            "h-full",
+            "fixed",
+            "left-0",
+            "top-0",
+            "pt-stack-lg",
+            "pb-stack-md",
+            "bg-surface-container-low"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "lg:hidden",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-margin",
+            "py-cell-padding-v",
+            "w-full",
+            "z-50",
+            "bg-surface-container-lowest",
+            "border-b"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "lg:ml-[240px]",
+            "pt-[60px]",
+            "lg:pt-0",
+            "h-full",
+            "overflow-y-auto",
+            "overflow-x-hidden",
+            "p-container-margin",
+            "relative"
+          ],
+          "childCount": 33
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "py-2",
+            "px-4",
+            "rounded",
+            "font-data-tabular",
+            "hover:opacity-90",
+            "transition-opacity"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary",
+            "text-body-sm",
+            "px-3",
+            "py-1",
+            "rounded",
+            "font-data-tabular"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Defaults",
+          "classes": [
+            "px-4",
+            "py-2",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-data-tabular",
+            "text-body-sm",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Save Preferences",
+          "classes": [
+            "px-4",
+            "py-2",
+            "bg-primary-container",
+            "text-on-primary",
+            "font-data-tabular",
+            "text-body-sm",
+            "rounded",
+            "hover:bg-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Sync",
+          "classes": [
+            "text-primary",
+            "font-data-tabular",
+            "text-body-sm",
+            "hover:underline",
+            "flex",
+            "items-center",
+            "gap-1"
+          ],
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "text-primary",
+            "hover:underline",
+            "font-body-sm",
+            "text-body-sm",
+            "flex",
+            "items-center",
+            "gap-1"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "classes": [
+            "text-secondary",
+            "hover:text-error",
+            "transition-colors",
+            "flex",
+            "items-center"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "classes": [],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedRoute": "/notifications",
+          "routeInferred": true,
+          "expectedBehavior": "navigate:/notifications"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "data_view",
+          "placeholder": "",
+          "name": "data_view",
+          "classes": [
+            "form-radio",
+            "text-primary",
+            "border-outline-variant",
+            "focus:ring-primary"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "select",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "w-full",
+            "max-w-xs",
+            "bg-surface",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-body-sm",
+            "text-body-sm",
+            "rounded",
+            "focus:ring-primary",
+            "focus:border-primary",
+            "shadow-sm"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "toggle_system",
+          "placeholder": "",
+          "name": "toggle_system",
+          "classes": [
+            "toggle-checkbox",
+            "absolute",
+            "block",
+            "w-5",
+            "h-5",
+            "rounded-full",
+            "bg-white",
+            "border-4",
+            "appearance-none",
+            "cursor-pointer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "toggle_assignment",
+          "placeholder": "",
+          "name": "toggle_assignment",
+          "classes": [
+            "toggle-checkbox",
+            "absolute",
+            "block",
+            "w-5",
+            "h-5",
+            "rounded-full",
+            "bg-white",
+            "border-4",
+            "appearance-none",
+            "cursor-pointer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "toggle_daily",
+          "placeholder": "",
+          "name": "toggle_daily",
+          "classes": [
+            "toggle-checkbox",
+            "absolute",
+            "block",
+            "w-5",
+            "h-5",
+            "rounded-full",
+            "bg-white",
+            "border-4",
+            "appearance-none",
+            "cursor-pointer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "analytics",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "account_circle",
+        "add",
+        "precision_manufacturing",
+        "analytics",
+        "settings",
+        "help",
+        "logout",
+        "notifications",
+        "sync",
+        "refresh",
+        "list",
+        "dashboard",
+        "close"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#d8dadc",
+        "surface-container-highest": "#e0e3e5",
+        "outline-variant": "#c3c6d7",
+        "inverse-primary": "#b4c5ff",
+        "on-error-container": "#93000a",
+        "tertiary-container": "#bc4800",
+        "outline": "#737686",
+        "primary": "#004ac6",
+        "on-secondary-fixed": "#0d1c2e",
+        "tertiary": "#943700",
+        "surface-container-high": "#e6e8ea",
+        "primary-container": "#2563eb",
+        "tertiary-fixed": "#ffdbcd",
+        "on-background": "#191c1e",
+        "surface-tint": "#0053db",
+        "secondary": "#515f74",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary": "#ffffff",
+        "background": "#f7f9fb",
+        "surface-container": "#eceef0",
+        "secondary-fixed": "#d5e3fc",
+        "on-primary-fixed": "#00174b",
+        "surface": "#f7f9fb",
+        "tertiary-fixed-dim": "#ffb596",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary-fixed-dim": "#b9c7df",
+        "inverse-surface": "#2d3133",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "surface-variant": "#e0e3e5",
+        "on-tertiary-container": "#ffede6",
+        "on-primary-container": "#eeefff",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed": "#360f00",
+        "on-primary-fixed-variant": "#003ea8",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#f2f4f6",
+        "on-secondary-fixed-variant": "#3a485b",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "inverse-on-surface": "#eff1f3",
+        "secondary-container": "#d5e3fc",
+        "on-surface-variant": "#434655",
+        "on-tertiary-fixed-variant": "#7d2d00",
+        "on-surface": "#191c1e",
+        "on-secondary-container": "#57657a"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Defaults",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Save Preferences",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Sync",
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "input",
+          "label": "data_view",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "select",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "toggle_system",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "toggle_assignment",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "toggle_daily",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "icon": "notifications",
+          "active": true
+        }
+      ],
+      "title": "Settings and Preferences - AuditTile Mini"
+    },
+    "8a7ff8a64e3f4304b43eda4d53a7640a": {
+      "screenId": "8a7ff8a64e3f4304b43eda4d53a7640a",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "block",
+          "classes": [
+            "bg-surface-container-low",
+            "dark:bg-on-secondary-fixed-variant",
+            "border-r",
+            "border-outline-variant",
+            "dark:border-outline",
+            "docked",
+            "left-0",
+            "h-full",
+            "w-[240px]",
+            "hidden"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container-lowest",
+            "dark:bg-inverse-surface",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-margin",
+            "py-cell-padding-v"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-container-margin",
+            "flex",
+            "flex-col",
+            "gap-stack-lg",
+            "bg-surface-dim"
+          ],
+          "childCount": 10
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "classes": [
+            "w-full",
+            "bg-primary",
+            "text-on-primary",
+            "font-body-md",
+            "text-body-md",
+            "py-cell-padding-v",
+            "px-cell-padding-h",
+            "rounded",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "menu",
+          "classes": [
+            "text-primary",
+            "lg:hidden",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "text-secondary",
+            "hover:bg-surface-container-low",
+            "dark:hover:bg-surface-variant",
+            "transition-colors",
+            "p-1",
+            "rounded",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "text-secondary",
+            "hover:bg-surface-container-low",
+            "dark:hover:bg-surface-variant",
+            "transition-colors",
+            "p-1",
+            "rounded",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "classes": [
+            "hidden",
+            "sm:block",
+            "bg-primary",
+            "text-on-primary",
+            "font-body-sm",
+            "text-body-sm",
+            "py-1",
+            "px-3",
+            "rounded",
+            "hover:bg-primary-container",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Clear All",
+          "classes": [
+            "text-primary",
+            "font-body-sm",
+            "text-body-sm",
+            "hover:underline",
+            "cursor-pointer"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Clear Filters",
+          "classes": [
+            "bg-surface-container-lowest",
+            "text-secondary",
+            "border",
+            "border-outline-variant",
+            "font-body-md",
+            "text-body-md",
+            "py-cell-padding-v",
+            "px-container-margin",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors",
+            "cursor-pointer"
+          ],
+          "icon": null,
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "refresh",
+          "classes": [
+            "text-secondary",
+            "p-1",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors",
+            "cursor-pointer"
+          ],
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View Diagnostics",
+          "classes": [
+            "bg-transparent",
+            "text-error",
+            "border",
+            "border-error",
+            "font-body-md",
+            "text-body-md",
+            "py-cell-padding-v",
+            "px-container-margin",
+            "rounded",
+            "hover:bg-error/10",
+            "transition-colors",
+            "cursor-pointer"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "classes": [
+            "bg-error",
+            "text-on-error",
+            "font-body-md",
+            "text-body-md",
+            "py-cell-padding-v",
+            "px-container-margin",
+            "rounded",
+            "hover:bg-error/90",
+            "transition-colors",
+            "cursor-pointer",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "font-body-sm",
+            "text-body-sm"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "font-body-sm",
+            "text-body-sm"
+          ],
+          "icon": "analytics",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-body-sm",
+            "text-body-sm"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "font-body-sm",
+            "text-body-sm"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "href": "#",
+          "classes": [
+            "font-body-sm",
+            "text-body-sm"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "dark:text-inverse-primary",
+            "border-b-2",
+            "border-primary",
+            "font-bold",
+            "pb-1",
+            "px-cell-padding-h",
+            "font-body-sm",
+            "text-body-sm",
+            "cursor-pointer",
+            "active:opacity-80"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "text-secondary",
+            "dark:text-secondary-fixed-dim",
+            "hover:text-primary",
+            "px-cell-padding-h",
+            "pb-1",
+            "font-body-sm",
+            "text-body-sm",
+            "cursor-pointer",
+            "active:opacity-80",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "href": "#",
+          "classes": [
+            "text-secondary",
+            "dark:text-secondary-fixed-dim",
+            "hover:text-primary",
+            "px-cell-padding-h",
+            "pb-1",
+            "font-body-sm",
+            "text-body-sm",
+            "cursor-pointer",
+            "active:opacity-80",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "precision_manufacturing",
+        "analytics",
+        "settings",
+        "help",
+        "logout",
+        "menu",
+        "notifications",
+        "account_circle",
+        "close",
+        "search_off",
+        "refresh",
+        "cloud_off"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDYtK_aupVSoUDMAuASOpA7XgXwV-TcBwTtMlr3YaIdumM9loyBolqy-AjvoyzSghni857zjfb5ZoiRDw4yRgNUvZbehCCGKDR0m8mL_FzIX-C8AdoU6wwholTYlAQyHgCH8qzE25ErBjpS0tWrsX",
+          "alt": "User profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#d8dadc",
+        "surface-container-highest": "#e0e3e5",
+        "outline-variant": "#c3c6d7",
+        "inverse-primary": "#b4c5ff",
+        "on-error-container": "#93000a",
+        "tertiary-container": "#bc4800",
+        "outline": "#737686",
+        "primary": "#004ac6",
+        "on-secondary-fixed": "#0d1c2e",
+        "tertiary": "#943700",
+        "surface-container-high": "#e6e8ea",
+        "primary-container": "#2563eb",
+        "tertiary-fixed": "#ffdbcd",
+        "on-background": "#191c1e",
+        "surface-tint": "#0053db",
+        "secondary": "#515f74",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary": "#ffffff",
+        "background": "#f7f9fb",
+        "surface-container": "#eceef0",
+        "secondary-fixed": "#d5e3fc",
+        "on-primary-fixed": "#00174b",
+        "surface": "#f7f9fb",
+        "tertiary-fixed-dim": "#ffb596",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary-fixed-dim": "#b9c7df",
+        "inverse-surface": "#2d3133",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "surface-variant": "#e0e3e5",
+        "on-tertiary-container": "#ffede6",
+        "on-primary-container": "#eeefff",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed": "#360f00",
+        "on-primary-fixed-variant": "#003ea8",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#f2f4f6",
+        "on-secondary-fixed-variant": "#3a485b",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "inverse-on-surface": "#eff1f3",
+        "secondary-container": "#d5e3fc",
+        "on-surface-variant": "#434655",
+        "on-tertiary-fixed-variant": "#7d2d00",
+        "on-surface": "#191c1e",
+        "on-secondary-container": "#57657a"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "menu",
+          "icon": "menu",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Clear All",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Clear Filters",
+          "icon": null,
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "refresh",
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View Diagnostics",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Settings",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Empty and Error Recovery - AuditTile Mini"
+    },
+    "a2eaf98f7c65403398b34ad8d3d64d71": {
+      "screenId": "a2eaf98f7c65403398b34ad8d3d64d71",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "lg:flex",
+            "flex-col",
+            "h-full",
+            "fixed",
+            "left-0",
+            "top-0",
+            "pt-stack-lg",
+            "pb-stack-md",
+            "bg-surface-container-low"
+          ],
+          "childCount": 9
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "lg:hidden",
+            "bg-surface-container-lowest",
+            "dark:bg-inverse-surface",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-margin",
+            "py-cell-padding-v",
+            "w-full",
+            "z-50"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "hidden",
+            "lg:flex",
+            "justify-between",
+            "items-center",
+            "px-container-margin",
+            "py-4",
+            "bg-surface",
+            "border-b",
+            "border-outline-variant",
+            "z-30"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-container-margin"
+          ],
+          "childCount": 43
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary",
+            "text-body-md",
+            "font-body-md",
+            "py-2",
+            "px-4",
+            "rounded",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "hover:bg-primary",
+            "transition-colors",
+            "cursor-pointer",
+            "active:scale-95"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter Insights",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-2",
+            "px-4",
+            "py-2",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "text-secondary",
+            "font-body-sm",
+            "text-body-sm",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Summary",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-2",
+            "px-4",
+            "py-2",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "text-secondary",
+            "font-body-sm",
+            "text-body-sm",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View All",
+          "classes": [
+            "font-body-sm",
+            "text-body-sm",
+            "text-primary",
+            "hover:underline"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "icon-fill"
+          ],
+          "icon": "analytics",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "precision_manufacturing",
+        "analytics",
+        "settings",
+        "help",
+        "logout",
+        "menu",
+        "notifications",
+        "account_circle",
+        "filter_list",
+        "download",
+        "verified",
+        "arrow_upward",
+        "fact_check",
+        "horizontal_rule",
+        "pending_actions",
+        "database",
+        "error",
+        "warning",
+        "info"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#d8dadc",
+        "surface-container-highest": "#e0e3e5",
+        "outline-variant": "#c3c6d7",
+        "inverse-primary": "#b4c5ff",
+        "on-error-container": "#93000a",
+        "tertiary-container": "#bc4800",
+        "outline": "#737686",
+        "primary": "#004ac6",
+        "on-secondary-fixed": "#0d1c2e",
+        "tertiary": "#943700",
+        "surface-container-high": "#e6e8ea",
+        "primary-container": "#2563eb",
+        "tertiary-fixed": "#ffdbcd",
+        "on-background": "#191c1e",
+        "surface-tint": "#0053db",
+        "secondary": "#515f74",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary": "#ffffff",
+        "background": "#f7f9fb",
+        "surface-container": "#eceef0",
+        "secondary-fixed": "#d5e3fc",
+        "on-primary-fixed": "#00174b",
+        "surface": "#f7f9fb",
+        "tertiary-fixed-dim": "#ffb596",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary-fixed-dim": "#b9c7df",
+        "inverse-surface": "#2d3133",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "surface-variant": "#e0e3e5",
+        "on-tertiary-container": "#ffede6",
+        "on-primary-container": "#eeefff",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed": "#360f00",
+        "on-primary-fixed-variant": "#003ea8",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#f2f4f6",
+        "on-secondary-fixed-variant": "#3a485b",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "inverse-on-surface": "#eff1f3",
+        "secondary-container": "#d5e3fc",
+        "on-surface-variant": "#434655",
+        "on-tertiary-fixed-variant": "#7d2d00",
+        "on-surface": "#191c1e",
+        "on-secondary-container": "#57657a"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter Insights",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Summary",
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View All",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "AuditTile Mini Operational Suite",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Record",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Operations",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "analytics",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Insights - AuditTile Mini"
+    },
+    "c6097a2948674156831d69d42c4c9e5c": {
+      "screenId": "c6097a2948674156831d69d42c4c9e5c",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container-lowest",
+            "dark:bg-inverse-surface",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-margin",
+            "py-cell-padding-v"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-container-margin"
+          ],
+          "childCount": 13
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Go back",
+          "classes": [
+            "text-secondary",
+            "dark:text-secondary-fixed-dim",
+            "hover:text-primary",
+            "transition-colors",
+            "cursor-pointer",
+            "active:opacity-80",
+            "p-1"
+          ],
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "px-4",
+            "py-2",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "text-secondary",
+            "font-body-sm",
+            "text-body-sm",
+            "rounded",
+            "hover:bg-surface-container-low",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Record",
+          "classes": [
+            "px-4",
+            "py-2",
+            "bg-primary-container",
+            "text-on-primary",
+            "border",
+            "border-transparent",
+            "font-body-sm",
+            "text-body-sm",
+            "rounded",
+            "hover:opacity-90",
+            "transition-opacity",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "arrow_back",
+          "classes": [],
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Unsaved changes",
+          "classes": [],
+          "icon": "sync",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Enter record name",
+          "placeholder": "Enter record name",
+          "name": "record_name",
+          "classes": [
+            "form-input-minimal"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "category",
+          "placeholder": "",
+          "name": "category",
+          "classes": [
+            "form-input-minimal",
+            "form-input-error"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "status",
+          "placeholder": "",
+          "name": "status",
+          "classes": [
+            "form-input-minimal"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search auditors...",
+          "placeholder": "Search auditors...",
+          "name": "auditor",
+          "classes": [
+            "form-input-minimal",
+            "pl-10"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "textarea",
+          "label": "Provide detailed context for this record...",
+          "placeholder": "Provide detailed context for this record...",
+          "name": "description",
+          "classes": [
+            "form-input-minimal",
+            "resize-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "arrow_back",
+        "sync",
+        "error",
+        "person_search",
+        "save"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#d8dadc",
+        "surface-container-highest": "#e0e3e5",
+        "outline-variant": "#c3c6d7",
+        "inverse-primary": "#b4c5ff",
+        "on-error-container": "#93000a",
+        "tertiary-container": "#bc4800",
+        "outline": "#737686",
+        "primary": "#004ac6",
+        "on-secondary-fixed": "#0d1c2e",
+        "tertiary": "#943700",
+        "surface-container-high": "#e6e8ea",
+        "primary-container": "#2563eb",
+        "tertiary-fixed": "#ffdbcd",
+        "on-background": "#191c1e",
+        "surface-tint": "#0053db",
+        "secondary": "#515f74",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#dbe1ff",
+        "on-tertiary": "#ffffff",
+        "background": "#f7f9fb",
+        "surface-container": "#eceef0",
+        "secondary-fixed": "#d5e3fc",
+        "on-primary-fixed": "#00174b",
+        "surface": "#f7f9fb",
+        "tertiary-fixed-dim": "#ffb596",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary-fixed-dim": "#b9c7df",
+        "inverse-surface": "#2d3133",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "surface-variant": "#e0e3e5",
+        "on-tertiary-container": "#ffede6",
+        "on-primary-container": "#eeefff",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed": "#360f00",
+        "on-primary-fixed-variant": "#003ea8",
+        "error-container": "#ffdad6",
+        "surface-container-low": "#f2f4f6",
+        "on-secondary-fixed-variant": "#3a485b",
+        "error": "#ba1a1a",
+        "surface-container-lowest": "#ffffff",
+        "inverse-on-surface": "#eff1f3",
+        "secondary-container": "#d5e3fc",
+        "on-surface-variant": "#434655",
+        "on-tertiary-fixed-variant": "#7d2d00",
+        "on-surface": "#191c1e",
+        "on-secondary-container": "#57657a"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "Go back",
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Record",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "arrow_back",
+          "icon": "arrow_back",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Unsaved changes",
+          "icon": "sync",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "input",
+          "label": "Enter record name",
+          "type": "text",
+          "placeholder": "Enter record name",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "category",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "status",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Search auditors...",
+          "type": "text",
+          "placeholder": "Search auditors...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Provide detailed context for this record...",
+          "type": "textarea",
+          "placeholder": "Provide detailed context for this record...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "arrow_back",
+          "icon": "arrow_back",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "AuditTile Mini",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Unsaved changes",
+          "icon": "sync",
+          "active": false
+        }
+      ],
+      "title": "Record Editor - AuditTile Mini"
+    }
+  }
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Operations - AuditTile Mini</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d8dadc",
+                    "surface-container-highest": "#e0e3e5",
+                    "outline-variant": "#c3c6d7",
+                    "inverse-primary": "#b4c5ff",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#bc4800",
+                    "outline": "#737686",
+                    "primary": "#004ac6",
+                    "on-secondary-fixed": "#0d1c2e",
+                    "tertiary": "#943700",
+                    "surface-container-high": "#e6e8ea",
+                    "primary-container": "#2563eb",
+                    "tertiary-fixed": "#ffdbcd",
+                    "on-background": "#191c1e",
+                    "surface-tint": "#0053db",
+                    "secondary": "#515f74",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#dbe1ff",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "surface-container": "#eceef0",
+                    "secondary-fixed": "#d5e3fc",
+                    "on-primary-fixed": "#00174b",
+                    "surface": "#f7f9fb",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "secondary-fixed-dim": "#b9c7df",
+                    "inverse-surface": "#2d3133",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f7f9fb",
+                    "surface-variant": "#e0e3e5",
+                    "on-tertiary-container": "#ffede6",
+                    "on-primary-container": "#eeefff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f6",
+                    "on-secondary-fixed-variant": "#3a485b",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "secondary-container": "#d5e3fc",
+                    "on-surface-variant": "#434655",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-surface": "#191c1e",
+                    "on-secondary-container": "#57657a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-margin": "24px",
+                    "unit": "4px",
+                    "cell-padding-v": "8px",
+                    "cell-padding-h": "12px",
+                    "stack-md": "12px",
+                    "stack-sm": "4px",
+                    "stack-lg": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "body-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "data-tabular": ["Inter"]
+            },
+            "fontSize": {
+                    "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                    "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col overflow-hidden">
+<!-- TopNavBar (Mobile/Tablet) -->
+<header class="bg-surface-container-lowest flex justify-between items-center px-container-margin py-cell-padding-v w-full z-50 border-b border-outline-variant lg:hidden shrink-0">
+<div class="flex items-center gap-gutter">
+<span class="material-symbols-outlined text-primary text-[24px] cursor-pointer" data-icon="menu">menu</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">AuditTile Mini</span>
+</div>
+<div class="flex items-center gap-stack-md">
+<span class="material-symbols-outlined text-primary cursor-pointer active:opacity-80" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-primary cursor-pointer active:opacity-80" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden lg:flex flex-col h-full bg-surface-container-low w-[240px] border-r border-outline-variant shrink-0 relative z-10 pt-stack-lg pb-stack-md">
+<div class="px-container-margin mb-stack-lg">
+<span class="font-headline-md text-headline-md text-on-surface block">AuditTile Mini</span>
+<span class="font-body-sm text-body-sm text-secondary">Operational Suite</span>
+</div>
+<div class="px-container-margin mb-stack-lg">
+<button class="w-full bg-primary-container text-on-primary rounded font-body-sm text-body-sm py-cell-padding-v flex items-center justify-center gap-stack-sm hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                    Create Record
+                </button>
+</div>
+<div class="flex-1 flex flex-col gap-stack-sm px-stack-md">
+<a class="border-l-4 border-primary bg-primary-container text-on-primary-container font-bold font-body-sm text-body-sm flex items-center gap-stack-md px-cell-padding-h py-cell-padding-v rounded-r cursor-pointer active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="precision_manufacturing">precision_manufacturing</span>
+                    Operations
+                </a>
+<a class="border-l-4 border-transparent text-secondary hover:bg-surface-container-high font-body-sm text-body-sm flex items-center gap-stack-md px-cell-padding-h py-cell-padding-v rounded-r cursor-pointer active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="analytics">analytics</span>
+                    Insights
+                </a>
+<a class="border-l-4 border-transparent text-secondary hover:bg-surface-container-high font-body-sm text-body-sm flex items-center gap-stack-md px-cell-padding-h py-cell-padding-v rounded-r cursor-pointer active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="settings">settings</span>
+                    Settings
+                </a>
+</div>
+<div class="mt-auto px-stack-md flex flex-col gap-stack-sm pt-stack-md border-t border-outline-variant">
+<a class="border-l-4 border-transparent text-secondary hover:bg-surface-container-high font-body-sm text-body-sm flex items-center gap-stack-md px-cell-padding-h py-cell-padding-v rounded-r cursor-pointer active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="help">help</span>
+                    Help
+                </a>
+<a class="border-l-4 border-transparent text-secondary hover:bg-surface-container-high font-body-sm text-body-sm flex items-center gap-stack-md px-cell-padding-h py-cell-padding-v rounded-r cursor-pointer active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="logout">logout</span>
+                    Logout
+                </a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col overflow-hidden relative">
+<!-- Page Header -->
+<div class="px-container-margin py-stack-md border-b border-outline-variant bg-surface shrink-0 flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Record Operations</h1>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Manage and track active operational records.</p>
+</div>
+<div class="flex items-center gap-gutter">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[18px]">search</span>
+<input class="w-64 pl-10 pr-4 py-1.5 border border-outline-variant rounded bg-surface-container-lowest font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Search records..." type="text"/>
+</div>
+<button class="bg-surface-container-lowest border border-outline-variant text-secondary px-cell-padding-h py-1.5 rounded flex items-center gap-stack-sm hover:bg-surface-container-low transition-colors font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                        Filter
+                    </button>
+<button class="bg-primary-container text-on-primary px-cell-padding-h py-1.5 rounded flex items-center gap-stack-sm hover:opacity-90 transition-opacity font-body-sm text-body-sm lg:hidden">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                        New
+                    </button>
+</div>
+</div>
+<!-- Content Area (Grid Layout) -->
+<div class="flex-1 overflow-auto p-container-margin flex flex-col lg:flex-row gap-gutter relative">
+<!-- Left Column (Metrics & Table) -->
+<div class="flex-1 flex flex-col gap-gutter min-w-0">
+<!-- Metrics Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter shrink-0">
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-stack-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Total Records</span>
+<div class="flex items-end justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface font-data-tabular">2,451</span>
+<span class="text-[11px] text-primary bg-primary-container/10 px-1.5 py-0.5 rounded font-medium">+12%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-stack-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Active Processing</span>
+<div class="flex items-end justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface font-data-tabular">184</span>
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">trending_up</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-stack-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Pending Review</span>
+<div class="flex items-end justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface font-data-tabular">42</span>
+<span class="text-[11px] text-error bg-error-container/20 px-1.5 py-0.5 rounded font-medium">Attention</span>
+</div>
+</div>
+</div>
+<!-- Data Table Section -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col flex-1 min-h-[400px]">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface sticky top-0 z-10 border-b border-outline-variant">
+<tr>
+<th class="py-2 px-3 font-label-caps text-label-caps text-secondary uppercase whitespace-nowrap w-12 text-center">Sel</th>
+<th class="py-2 px-3 font-label-caps text-label-caps text-secondary uppercase whitespace-nowrap">Record ID</th>
+<th class="py-2 px-3 font-label-caps text-label-caps text-secondary uppercase whitespace-nowrap">Status</th>
+<th class="py-2 px-3 font-label-caps text-label-caps text-secondary uppercase whitespace-nowrap">Date Modified</th>
+<th class="py-2 px-3 font-label-caps text-label-caps text-secondary uppercase whitespace-nowrap">Assigned Auditor</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 Active -->
+<tr class="border-b border-outline-variant bg-surface-container-low cursor-pointer">
+<td class="py-2 px-3 text-center">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary h-3 w-3" type="checkbox"/>
+</td>
+<td class="py-2 px-3 font-data-tabular">REC-9821</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+<span>Processing</span>
+</div>
+</td>
+<td class="py-2 px-3 font-data-tabular">2023-10-27 14:32</td>
+<td class="py-2 px-3">Sarah Jenkins</td>
+</tr>
+<!-- Row 2 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low cursor-pointer">
+<td class="py-2 px-3 text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary h-3 w-3" type="checkbox"/>
+</td>
+<td class="py-2 px-3 font-data-tabular">REC-9820</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></div>
+<span>Pending</span>
+</div>
+</td>
+<td class="py-2 px-3 font-data-tabular">2023-10-27 11:15</td>
+<td class="py-2 px-3">Michael Chen</td>
+</tr>
+<!-- Row 3 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low cursor-pointer">
+<td class="py-2 px-3 text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary h-3 w-3" type="checkbox"/>
+</td>
+<td class="py-2 px-3 font-data-tabular">REC-9819</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">error</span>
+<span class="text-error">Flagged</span>
+</div>
+</td>
+<td class="py-2 px-3 font-data-tabular">2023-10-26 09:41</td>
+<td class="py-2 px-3">Elena Rossi</td>
+</tr>
+<!-- Row 4 -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low cursor-pointer">
+<td class="py-2 px-3 text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary h-3 w-3" type="checkbox"/>
+</td>
+<td class="py-2 px-3 font-data-tabular">REC-9818</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+<span class="text-secondary">Closed</span>
+</div>
+</td>
+<td class="py-2 px-3 font-data-tabular">2023-10-25 16:20</td>
+<td class="py-2 px-3">System Auto</td>
+</tr>
+<!-- More rows would follow... -->
+<tr class="border-b border-outline-variant hover:bg-surface-container-low cursor-pointer">
+<td class="py-2 px-3 text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary h-3 w-3" type="checkbox"/>
+</td>
+<td class="py-2 px-3 font-data-tabular">REC-9817</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+<span>Processing</span>
+</div>
+</td>
+<td class="py-2 px-3 font-data-tabular">2023-10-25 10:05</td>
+<td class="py-2 px-3">Sarah Jenkins</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-auto px-cell-padding-h py-2 border-t border-outline-variant flex justify-between items-center text-[12px] text-secondary bg-surface">
+<span>Showing 1-5 of 2,451</span>
+<div class="flex gap-2">
+<button class="px-2 py-1 border border-outline-variant rounded hover:bg-surface-container-low disabled:opacity-50" disabled="">Prev</button>
+<button class="px-2 py-1 border border-outline-variant rounded hover:bg-surface-container-low">Next</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (Details Panel) -->
+<div class="w-full lg:w-[320px] shrink-0 flex flex-col gap-gutter">
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-stack-lg flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-stack-lg border-b border-outline-variant pb-stack-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-data-tabular">REC-9821</h2>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Details &amp; Metrics</span>
+</div>
+<button class="text-secondary hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+<div class="space-y-stack-md flex-1">
+<!-- Operational Metrics -->
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-2">Cycle Time Analysis</span>
+<div class="grid grid-cols-2 gap-stack-sm">
+<div class="bg-surface p-2 rounded border border-outline-variant">
+<span class="text-[10px] text-secondary block">Current Phase</span>
+<span class="font-data-tabular text-body-sm font-medium">4h 12m</span>
+</div>
+<div class="bg-surface p-2 rounded border border-outline-variant">
+<span class="text-[10px] text-secondary block">Est. Completion</span>
+<span class="font-data-tabular text-body-sm font-medium">18:00 EST</span>
+</div>
+</div>
+</div>
+<!-- Throughput Bar -->
+<div class="mt-4">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Throughput Status</span>
+<span class="text-[10px] font-medium text-primary">68%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[68%]"></div>
+</div>
+</div>
+<!-- Recent Activity -->
+<div class="mt-stack-lg pt-stack-md border-t border-outline-variant">
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-3">Recent Activity</span>
+<ul class="space-y-3">
+<li class="flex gap-2 items-start">
+<div class="mt-0.5">
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">Status changed to Processing</p>
+<p class="text-[11px] text-secondary font-data-tabular">14:32 - S. Jenkins</p>
+</div>
+</li>
+<li class="flex gap-2 items-start opacity-70">
+<div class="mt-0.5">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">Document attached: Q3_Audit.pdf</p>
+<p class="text-[11px] text-secondary font-data-tabular">11:05 - System</p>
+</div>
+</li>
+<li class="flex gap-2 items-start opacity-70">
+<div class="mt-0.5">
+<div class="w-1.5 h-1.5 rounded-full bg-outline"></div>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">Record initialized</p>
+<p class="text-[11px] text-secondary font-data-tabular">09:00 - API Ingest</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-stack-lg pt-stack-md border-t border-outline-variant flex gap-2">
+<button class="flex-1 bg-surface border border-outline-variant text-secondary px-3 py-1.5 rounded font-body-sm text-body-sm hover:bg-surface-container-low transition-colors">
+                                Reassign
+                            </button>
+<button class="flex-1 bg-primary text-on-primary px-3 py-1.5 rounded font-body-sm text-body-sm hover:opacity-90 transition-opacity">
+                                Escalate
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

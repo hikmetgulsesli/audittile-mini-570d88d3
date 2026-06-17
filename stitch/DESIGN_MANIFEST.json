@@ -1,0 +1,57 @@
+[
+  {
+    "screenId": "c6097a2948674156831d69d42c4c9e5c",
+    "title": "Record Editor - AuditTile Mini",
+    "htmlFile": "c6097a2948674156831d69d42c4c9e5c.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzkyMzgwM2RjMTA4NjQ2YWE4Zjc3NWNhZjIyZGZhNDc5EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxODYzNjkwOTI4NjE1NDU4NTAx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/audittile-mini-570d88d3/stitch/c6097a2948674156831d69d42c4c9e5c.html",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "8a7ff8a64e3f4304b43eda4d53a7640a",
+    "title": "Empty and Error Recovery - AuditTile Mini",
+    "htmlFile": "8a7ff8a64e3f4304b43eda4d53a7640a.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2ExZDdiZDFiNWZjOTRjYTZhNjg1OTQ4MzA1NjE4NDAzEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxODYzNjkwOTI4NjE1NDU4NTAx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/audittile-mini-570d88d3/stitch/8a7ff8a64e3f4304b43eda4d53a7640a.html",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  },
+  {
+    "screenId": "a2eaf98f7c65403398b34ad8d3d64d71",
+    "title": "Insights - AuditTile Mini",
+    "htmlFile": "a2eaf98f7c65403398b34ad8d3d64d71.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzNhNzY3M2U2ZDFlZDQ0ZGFhYmZiMmU5ZTNmM2M3ZmRlEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxODYzNjkwOTI4NjE1NDU4NTAx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/audittile-mini-570d88d3/stitch/a2eaf98f7c65403398b34ad8d3d64d71.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "7586ccb18b684dfead9c40675a4993be",
+    "title": "Settings and Preferences - AuditTile Mini",
+    "htmlFile": "7586ccb18b684dfead9c40675a4993be.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzcxMmMzNDgwMDZlNzRmNjRiZDMzOWQ5MDY5ZmU1NTJlEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxODYzNjkwOTI4NjE1NDU4NTAx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/audittile-mini-570d88d3/stitch/7586ccb18b684dfead9c40675a4993be.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "5acbe56f6e964ccc94b8e3151faa1c30",
+    "title": "Record Operations - AuditTile Mini",
+    "htmlFile": "5acbe56f6e964ccc94b8e3151faa1c30.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzU5NWRlMmNiNjgxNjQxMmY5ZjU5YTJiZGVmMWQyMzU3EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxODYzNjkwOTI4NjE1NDU4NTAx&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/audittile-mini-570d88d3/stitch/5acbe56f6e964ccc94b8e3151faa1c30.html",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  }
+]

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Insights - AuditTile Mini</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d8dadc",
+                        "surface-container-highest": "#e0e3e5",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-primary": "#b4c5ff",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#bc4800",
+                        "outline": "#737686",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "tertiary": "#943700",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-container": "#2563eb",
+                        "tertiary-fixed": "#ffdbcd",
+                        "on-background": "#191c1e",
+                        "surface-tint": "#0053db",
+                        "secondary": "#515f74",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "surface-container": "#eceef0",
+                        "secondary-fixed": "#d5e3fc",
+                        "on-primary-fixed": "#00174b",
+                        "surface": "#f7f9fb",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary-container": "#ffede6",
+                        "on-primary-container": "#eeefff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary-container": "#d5e3fc",
+                        "on-surface-variant": "#434655",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-surface": "#191c1e",
+                        "on-secondary-container": "#57657a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-margin": "24px",
+                        "unit": "4px",
+                        "cell-padding-v": "8px",
+                        "cell-padding-h": "12px",
+                        "stack-md": "12px",
+                        "stack-sm": "4px",
+                        "stack-lg": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "data-tabular": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                        "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F8FAFC; /* Base layer from guidelines */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-hidden flex h-screen">
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden lg:flex flex-col h-full fixed left-0 top-0 pt-stack-lg pb-stack-md bg-surface-container-low dark:bg-on-secondary-fixed-variant docked left-0 h-full w-[240px] border-r border-outline-variant dark:border-outline flat no shadows z-40">
+<div class="px-container-margin mb-stack-lg">
+<h1 class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface">AuditTile Mini</h1>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Operational Suite</p>
+</div>
+<div class="px-container-margin mb-stack-lg">
+<button class="w-full bg-primary-container text-on-primary text-body-md font-body-md py-2 px-4 rounded flex items-center justify-center gap-2 hover:bg-primary transition-colors cursor-pointer active:scale-95">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                Create Record
+            </button>
+</div>
+<div class="flex-1 overflow-y-auto w-full">
+<ul class="flex flex-col space-y-1 w-full">
+<!-- Operations - Inactive -->
+<li class="w-full">
+<a class="flex items-center gap-3 px-container-margin py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-high dark:hover:bg-inverse-surface transition-all cursor-pointer active:scale-95 font-body-sm text-body-sm w-full" href="#">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span>Operations</span>
+</a>
+</li>
+<!-- Insights - Active -->
+<li class="w-full">
+<a class="flex items-center gap-3 px-container-margin py-3 border-l-4 border-primary bg-primary-container text-on-primary-container font-bold cursor-pointer active:scale-95 font-body-sm text-body-sm w-full" href="#">
+<span class="material-symbols-outlined icon-fill" data-icon="analytics">analytics</span>
+<span>Insights</span>
+</a>
+</li>
+<!-- Settings - Inactive -->
+<li class="w-full">
+<a class="flex items-center gap-3 px-container-margin py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-high dark:hover:bg-inverse-surface transition-all cursor-pointer active:scale-95 font-body-sm text-body-sm w-full" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="mt-auto w-full pt-stack-md border-t border-outline-variant">
+<ul class="flex flex-col space-y-1 w-full">
+<li class="w-full">
+<a class="flex items-center gap-3 px-container-margin py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-high dark:hover:bg-inverse-surface transition-all cursor-pointer active:scale-95 font-body-sm text-body-sm w-full" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Help</span>
+</a>
+</li>
+<li class="w-full">
+<a class="flex items-center gap-3 px-container-margin py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-high dark:hover:bg-inverse-surface transition-all cursor-pointer active:scale-95 font-body-sm text-body-sm w-full" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>Logout</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col lg:ml-[240px] h-full overflow-hidden relative">
+<!-- TopNavBar (Mobile only, replacing sidebar on small screens) -->
+<header class="lg:hidden bg-surface-container-lowest dark:bg-inverse-surface flex justify-between items-center px-container-margin py-cell-padding-v w-full z-50 docked full-width top-0 border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface cursor-pointer">menu</span>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">AuditTile Mini</span>
+</div>
+<div class="flex items-center gap-4 text-primary dark:text-inverse-primary">
+<span class="material-symbols-outlined cursor-pointer active:opacity-80" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined cursor-pointer active:opacity-80" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- Top Header Actions -->
+<header class="hidden lg:flex justify-between items-center px-container-margin py-4 bg-surface border-b border-outline-variant z-30">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Insights Dashboard</h2>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest border border-outline-variant text-secondary font-body-sm text-body-sm rounded hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+                    Filter Insights
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest border border-outline-variant text-secondary font-body-sm text-body-sm rounded hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                    Export Summary
+                </button>
+</div>
+</header>
+<!-- Scrollable Content -->
+<main class="flex-1 overflow-y-auto p-container-margin">
+<div class="max-w-7xl mx-auto space-y-stack-lg">
+<!-- Metric Tiles Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Tile 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded flex flex-col gap-2 relative overflow-hidden group hover:border-primary transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Overall Compliance</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<div class="flex items-end gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-data-tabular">94.2%</span>
+<span class="font-body-sm text-body-sm text-primary flex items-center mb-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+                                1.2%
+                            </span>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded flex flex-col gap-2 relative overflow-hidden group hover:border-primary transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Data Accuracy</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">fact_check</span>
+</div>
+<div class="flex items-end gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-data-tabular">99.8%</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center mb-1">
+<span class="material-symbols-outlined text-[14px]">horizontal_rule</span>
+                                0.0%
+                            </span>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded flex flex-col gap-2 relative overflow-hidden group hover:border-primary transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Pending Reviews</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">pending_actions</span>
+</div>
+<div class="flex items-end gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-data-tabular">142</span>
+<span class="font-body-sm text-body-sm text-tertiary-container flex items-center mb-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+                                12
+                            </span>
+</div>
+</div>
+<!-- Tile 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded flex flex-col gap-2 relative overflow-hidden group hover:border-primary transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Total Records</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">database</span>
+</div>
+<div class="flex items-end gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg font-data-tabular">12,450</span>
+<span class="font-body-sm text-body-sm text-primary flex items-center mb-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+                                450
+                            </span>
+</div>
+</div>
+</div>
+<!-- Bento Grid Layout for Visualizations and Hints -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Chart Area -->
+<div class="lg:col-span-2 bg-surface-container-lowest border border-outline-variant rounded flex flex-col">
+<div class="p-4 border-b border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-on-surface">State Distribution</h3>
+</div>
+<div class="p-4 flex-1 min-h-[240px] flex items-end gap-4">
+<!-- Mock Bar Chart -->
+<div class="flex-1 flex flex-col items-center justify-end h-full gap-2">
+<div class="w-full bg-primary-container rounded-t" style="height: 80%;"></div>
+<span class="font-label-caps text-label-caps text-secondary">Verified</span>
+</div>
+<div class="flex-1 flex flex-col items-center justify-end h-full gap-2">
+<div class="w-full bg-surface-container-highest border border-outline-variant rounded-t" style="height: 40%;"></div>
+<span class="font-label-caps text-label-caps text-secondary">Pending</span>
+</div>
+<div class="flex-1 flex flex-col items-center justify-end h-full gap-2">
+<div class="w-full bg-tertiary-fixed rounded-t" style="height: 15%;"></div>
+<span class="font-label-caps text-label-caps text-secondary">Rejected</span>
+</div>
+<div class="flex-1 flex flex-col items-center justify-end h-full gap-2">
+<div class="w-full bg-error-container rounded-t" style="height: 5%;"></div>
+<span class="font-label-caps text-label-caps text-secondary">Error</span>
+</div>
+</div>
+</div>
+<!-- Follow-up Hints Panel -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col">
+<div class="p-4 border-b border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-on-surface">Follow-up Hints</h3>
+</div>
+<div class="p-0 flex-1 overflow-y-auto max-h-[280px]">
+<ul class="flex flex-col">
+<li class="p-4 border-b border-surface-container flex gap-3 items-start hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-error mt-0.5" data-icon="error">error</span>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Action Required: 5 records in Error state</p>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Validation failed for batch #B-992.</p>
+</div>
+</li>
+<li class="p-4 border-b border-surface-container flex gap-3 items-start hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-tertiary mt-0.5" data-icon="warning">warning</span>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Warning: Processing delay</p>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Queue X-1 is experiencing unusual latency.</p>
+</div>
+</li>
+<li class="p-4 flex gap-3 items-start hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="info">info</span>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">System Update Completed</p>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Routine maintenance finished at 04:00 UTC.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Recent Activity Table -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col">
+<div class="p-4 border-b border-outline-variant flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Recent Activity</h3>
+<button class="font-body-sm text-body-sm text-primary hover:underline">View All</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-bright border-b border-outline-variant">
+<th class="py-2 px-4 font-label-caps text-label-caps text-secondary uppercase font-semibold">Event ID</th>
+<th class="py-2 px-4 font-label-caps text-label-caps text-secondary uppercase font-semibold">Type</th>
+<th class="py-2 px-4 font-label-caps text-label-caps text-secondary uppercase font-semibold">User</th>
+<th class="py-2 px-4 font-label-caps text-label-caps text-secondary uppercase font-semibold">Timestamp</th>
+<th class="py-2 px-4 font-label-caps text-label-caps text-secondary uppercase font-semibold">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-surface-container hover:bg-surface-container-low transition-colors group">
+<td class="py-2 px-4 font-body-sm text-body-sm font-data-tabular">EV-10492</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">Data Ingestion</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">system_agent</td>
+<td class="py-2 px-4 font-body-sm text-body-sm text-secondary">2023-10-27 14:32:01</td>
+<td class="py-2 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium bg-secondary-container text-on-secondary-container">
+                                            Success
+                                        </span>
+</td>
+</tr>
+<tr class="border-b border-surface-container hover:bg-surface-container-low transition-colors group">
+<td class="py-2 px-4 font-body-sm text-body-sm font-data-tabular">EV-10491</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">Manual Override</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">j.doe@audittile.com</td>
+<td class="py-2 px-4 font-body-sm text-body-sm text-secondary">2023-10-27 14:15:22</td>
+<td class="py-2 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium bg-tertiary-fixed text-on-tertiary-fixed">
+                                            Flagged
+                                        </span>
+</td>
+</tr>
+<tr class="border-b border-surface-container hover:bg-surface-container-low transition-colors group">
+<td class="py-2 px-4 font-body-sm text-body-sm font-data-tabular">EV-10490</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">Record Deletion</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">admin_mgr</td>
+<td class="py-2 px-4 font-body-sm text-body-sm text-secondary">2023-10-27 13:58:10</td>
+<td class="py-2 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[12px]">error</span>
+                                            Error
+                                        </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-2 px-4 font-body-sm text-body-sm font-data-tabular">EV-10489</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">Schema Update</td>
+<td class="py-2 px-4 font-body-sm text-body-sm">system_agent</td>
+<td class="py-2 px-4 font-body-sm text-body-sm text-secondary">2023-10-27 12:00:00</td>
+<td class="py-2 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium bg-secondary-container text-on-secondary-container">
+                                            Success
+                                        </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

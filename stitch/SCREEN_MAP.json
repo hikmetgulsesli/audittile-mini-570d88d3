@@ -1,0 +1,47 @@
+[
+  {
+    "screenId": "c6097a2948674156831d69d42c4c9e5c",
+    "name": "Record Editor - AuditTile Mini",
+    "type": "form",
+    "description": "Record Editor - AuditTile Mini screen",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "8a7ff8a64e3f4304b43eda4d53a7640a",
+    "name": "Empty and Error Recovery - AuditTile Mini",
+    "type": "error",
+    "description": "Empty and Error Recovery - AuditTile Mini screen",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  },
+  {
+    "screenId": "a2eaf98f7c65403398b34ad8d3d64d71",
+    "name": "Insights - AuditTile Mini",
+    "type": "app-screen",
+    "description": "Insights - AuditTile Mini screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "7586ccb18b684dfead9c40675a4993be",
+    "name": "Settings and Preferences - AuditTile Mini",
+    "type": "settings",
+    "description": "Settings and Preferences - AuditTile Mini screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "5acbe56f6e964ccc94b8e3151faa1c30",
+    "name": "Record Operations - AuditTile Mini",
+    "type": "app-screen",
+    "description": "Record Operations - AuditTile Mini screen",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  }
+]
